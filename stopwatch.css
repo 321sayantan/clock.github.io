@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    padding: 10px 0px;
+    background-color: rgb(0, 0, 0);
+    position:sticky ;
+}
+
+#image{
+    width: 140px;
+}
+
+nav li{
+    list-style: none;    
+    padding: 5px 10px;
+}
+
+.mid{
+    display:flex;    
+    justify-content: center;
+    width: 100vw;
+}
+
+.mid li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.stopwatch{
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#dial {
+    box-shadow: 1px 1px 60px 25px rgb(0,0,0);
+    display: flex;
+    width:50vh;
+    height: 50vh;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+#dial h1{
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive;
+}
+#dial h2{
+    padding-bottom: 1px;
+    padding-top: 13px;
+    font-size: 70px;
+}
+.btn{
+    font-size: 18px;
+    color: white;
+    padding: 10px 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--clr);
+}
+
+.a{
+    display: flex;
+    flex-direction: row;
+    font-size: 62px;
+}

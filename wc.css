@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ body
+{
+    overflow: hidden;
+} 
+
+nav{
+    display: flex;
+    padding: 10px 0px;
+    background-color: rgb(0, 0, 0);
+    position:sticky ;
+}
+
+#image{
+    width: 140px;
+}
+
+/* nav img{
+    list-style: none;    
+    padding: 5px 10px;
+    color: white;
+} */
+
+.mid{
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.mid li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family:cursive;
+}
+
+.country{
+    height: 42px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    background: no-repeat center center/cover;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#in_h, #in_m, #in_s,#us_h, #us_m, #us_s,#uk_h, #uk_m, #uk_s,#rs_h, #rs_m, #rs_s{
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+#clock, #clock1, #clock2,#clock3{
+    position: relative;
+    height: 140px;
+    width: 140px;
+    background: #000;
+    border-radius: 100%;
+}
+
+#in_h, #us_h, #uk_h,#rs_h{
+    background-color: red;
+    height: 21%;
+    width: 4px;
+    top: 30%;
+    left: 49%;
+    /* z-index: 3; */
+}
+#in_m, #us_m, #uk_m,#rs_m{
+    background: #2eff05;
+    height: 33%;
+    width: 4px;
+    top: 18%;
+    left: 49%;
+}
+#in_s, #us_s, #uk_s,#rs_s{
+    background: #00f5fd;
+    height: 50px;
+    width: 2px;
+    top: 15%;
+    left: 49.5%;
+}       
+
+.center{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#clock, #clock1, #clock2,#clock3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock span , #clock1 span, #clock2 span,#clock3 span{
+    position: absolute;
+    color: white;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 2px;
+    text-align: center;
+}
+
+#clock span b, #clock1 span b, #clock2 span b,#clock3 span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
+#clock::after, #clock1::after, #clock2::after,#clock3::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.card{
+    /* width: 25%; */
+    padding: 0px;
+    /* margin-right: 3px; */
+    /* opacity: 0.8; */
+    /* background-color: antiquewhite; */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 5px black;
+}
+
+#in_time, #us_time, #uk_time,#rs_time{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#in_date, #us_date, #uk_date,#rs_date{
+text-align: center;
+font-size: xx-large;
+}
+
+#bg{
+    background: url('https://w0.peakpx.com/wallpaper/304/741/HD-wallpaper-3d-world-map-with-flags-world-map-concept-artwork-3d-world-map-creative-world-map-3d-art-world-maps.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.box
+{
+    padding-top: 60px;
+}
+
+.col-lg-4{
+    width: 24%;
+    margin: 0px 5px;
+}
+
+.container{
+    max-width: 1167px;
+    /* max-width: 100vw; */
+}
+
+p{
+    padding: 0px 15px;
+}
+
+.border
+{
+    border: 4px solid red;
+}

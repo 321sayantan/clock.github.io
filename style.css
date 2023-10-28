@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding: 10px 0px;
+    background-color: rgb(0, 0, 0);
+    position:sticky ;
+}
+
+#image{
+    width: 140px;
+}
+
+nav li{
+    list-style: none;    
+    padding: 5px 10px;
+}
+
+.mid{
+    display:flex;    
+    justify-content: center;
+    width: 100vw;
+}
+
+.mid li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* #middle{
+padding-left: 35vw;
+} */
+
+#boddy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    /* background-color: rgb(71 71 71); */
+    background: url('https://img.freepik.com/free-vector/vintage-clocks-pattern_1085-156.jpg?size=626&ext=jpg&ga=GA1.1.1294433575.1698520695&semt=ais') no-repeat center center/cover;
+}
+
+.container1{
+    position: relative;
+    /* border: 2px solid yellow; */
+}
+
+.clock{
+    box-shadow: 1px 1px 50px 30px rgb(0,0,0);
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 5px solid  rgba(255, 255, 255, 0.4);
+    background-color: rgb(0, 0, 0);
+    /* background-color: #2b2a2a; */
+    /* opacity: 0.8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0dcaf0;
+    /* backdrop-filter: blur(5px); */
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+
+.clock b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 25px;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 5;
+}
+
+
+#hour{
+    position: absolute;
+    height: 22%;
+    width: 10px;
+    top: 28.2%;
+    left: 49%;
+    background-color: red;
+    transform-origin: bottom;
+    border-radius: 10px;
+    z-index: 2;
+    /* display: none; */
+}
+
+
+#minutes{
+    position: absolute;
+    height: 35%;
+    width: 7px;
+    top: 15.6%;
+    left: 49.5%;
+    background-color: #00ff78;
+    transform-origin: bottom;
+    border-radius: 10px;
+    z-index: 1;
+    /* display: none; */
+}
+
+
+#seconds{
+    position: absolute;
+    height: 41%;
+    width: 4px;
+    top: 17.5%;
+    left: 49.8%;
+    transform-origin: center 80%;
+    background-color: rgb(255, 251, 0);
+    border-radius: 10px;
+    z-index: 3;
+    /* background: linear-gradient(yellow 80%, violet 20%); */
+    /* display: none; */
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .clock{
+        height: 50vmax;
+        width: 51vmax;
+    }
+}
+
+@media only screen and (max-width: 440px)
+{
+    .clock{
+        height: 50vmax;
+        width: 51vmax;
+    }
+}
